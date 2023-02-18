@@ -1,10 +1,10 @@
-const { findLastKey } = require('lodash');
+// const { findLastKey } = require('lodash');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Post extends Model {}
 
-Post.ini(
+Post.init(
     {
         id: {
             type: DataTypes.STRING,
